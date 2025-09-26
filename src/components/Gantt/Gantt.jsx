@@ -21,6 +21,54 @@ const timelineData = [
         start: 235,
         end: 1140,
     },
+    {
+        id: 4,
+        name: "Kenan",
+        start: 325,
+        end: 1235,
+    },
+    {
+        id: 5,
+        name: "Mahalalel",
+        start: 395,
+        end: 1290,
+    },
+    {
+        id: 6,
+        name: "Jared",
+        start: 460,
+        end: 1422,
+    },
+    {
+        id: 7,
+        name: "Enoch",
+        start: 622,
+        end: 987,
+    },
+    {
+        id: 8,
+        name: "Methuselah",
+        start: 687,
+        end: 1656,
+    },
+    {
+        id: 9,
+        name: "Lamech",
+        start: 874,
+        end: 1651,
+    },
+    {
+        id: 10,
+        name: "Noah",
+        start: 1056,
+        end: 2006,
+    },
+    {
+        id: 11,
+        name: "Flood",
+        start: 1656,
+        end: 1656,
+    }
 ];
 
 const timelineStart = 0; // earliest year
