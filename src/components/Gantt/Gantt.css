@@ -15,13 +15,34 @@
 }
 
 .year-mark {
-  color: white;
+  position: absolute;
+  top: 0;
+  width: 50px;       /* enough space for text */
+  text-align: center;
+  white-space: nowrap; /* keep year digits in one line */
+}
+
+.year-mark::after {
+  content: "|";
+  display: block;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.body {
+  position: relative;
+  margin-top: 20px;
 }
 
 .bar {
   position: absolute;
   height: 20px;
   background-color: steelblue;
-  top: 10px;
+  color: white;
+  font-size: 12px;
+  padding: 2px 4px;
   border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

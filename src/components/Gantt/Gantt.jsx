@@ -5,33 +5,33 @@ import "./Gantt.css";
 const timelineData = [
     {
         id: 1,
-        name: "Alexander the Great",
-        start: -356, // BC as negative
-        end: -323,
+        name: "Adam",
+        start: 0,
+        end: 930,
     },
     {
         id: 2,
-        name: "Julius Caesar",
-        start: -100,
-        end: -44,
+        name: "Seth",
+        start: 130,
+        end: 1042,
     },
     {
         id: 3,
-        name: "Isaac Newton",
-        start: 1643,
-        end: 1727,
+        name: "Enosh",
+        start: 235,
+        end: 1140,
     },
 ];
 
-const timelineStart = -400; // earliest year
-const timelineEnd = 1800;   // latest year
+const timelineStart = 0; // earliest year
+const timelineEnd = 5000;   // latest year
 const totalYears = timelineEnd - timelineStart;
 
-const yearWidth = 5; // pixels per year
+const yearWidth = 1; // pixels per year
 
 const years = [];
 for (let mark = timelineStart; mark <= timelineEnd; mark += 50) {
-   years.push(mark);
+    years.push(mark);
 }
 
 function getBarStyle(event) {
@@ -44,15 +44,29 @@ const Gantt = () => {
     return (
         <div className="container">
             <div className="header" >
-            {years.map((year) => (
-                <div
-                    key={`year${year}`}
-                    className="year-mark"
-                    style={{ left: (year - timelineStart) * yearWidth }}
-                >
-                    {year}
-                </div>
-            ))}
+                {years.map((year) => (
+                    <div
+                        key={`year${year}`}
+                        className="year-mark"
+                        style={{ left: (year - timelineStart) * yearWidth }}
+                    >
+                        {year}
+                    </div>
+                ))}
+            </div>
+            <div className="body">
+                {timelineData.map((event, index) => (
+                    <div
+                        key={event.id}
+                        className="bar"
+                        style={{
+                            ...getBarStyle(event),
+                            top: index * 30, // vertical stacking
+                        }}
+                    >
+                        {event.name}
+                    </div>
+                ))}
             </div>
         </div>
     );
