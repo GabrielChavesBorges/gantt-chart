@@ -68,11 +68,83 @@ const timelineData = [
         name: "Flood",
         start: 1656,
         end: 1656,
-    }
+    },
+    {
+        id: 12,
+        name: "Shem",
+        start: 1556,
+        end: 2156,
+    },
+    {
+        id: 13,
+        name: "Arphaxad",
+        start: 1656,
+        end: 2094,
+    },
+    {
+        id: 14,
+        name: "Shelah",
+        start: 1691,
+        end: 2124,
+    },
+    {
+        id: 15,
+        name: "Eber",
+        start: 1721,
+        end: 2185,
+    },
+    {
+        id: 16,
+        name: "Peleg",
+        start: 1755,
+        end: 1994,
+    },
+    {
+        id: 17,
+        name: "Reu",
+        start: 1785,
+        end: 2024,
+    },
+    {
+        id: 18,
+        name: "Serug",
+        start: 1817,
+        end: 2047,
+    },
+    {
+        id: 19,
+        name: "Nahor",
+        start: 1847,
+        end: 1995,
+    },
+    {
+        id: 20,
+        name: "Terah",
+        start: 1876,
+        end: 2081,
+    },    
+    {
+        id: 21,
+        name: "Abram",
+        start: 1946,
+        end: 2121,
+    },
+    {
+        id: 22,
+        name: "Isaac",
+        start: 2046,
+        end: 3306,
+    },
+    {
+        id: 23,
+        name: "Jesus",
+        start: 3306,
+        end: 5331,
+    },
 ];
 
 const timelineStart = 0; // earliest year
-const timelineEnd = 5000;   // latest year
+const timelineEnd = 6000;   // latest year
 const totalYears = timelineEnd - timelineStart;
 
 const yearWidth = 1; // pixels per year
