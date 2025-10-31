@@ -133,13 +133,13 @@ const timelineData = [
         id: 22,
         name: "Isaac",
         start: 2046,
-        end: 3306,
+        end: 2226,
     },
     {
         id: 23,
-        name: "Jesus",
-        start: 3306,
-        end: 5331,
+        name: "Jacob",
+        start: 2106,
+        end: 2253,
     },
 ];
 
